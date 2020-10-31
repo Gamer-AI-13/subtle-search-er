@@ -22,15 +22,13 @@ $GLOBALS["TG_BOT_TOKEN"] = getenv("TG_BOT_TOKEN");
 // the message that should be displayed,
 // when the bot is started
 $GLOBALS["START_MESSAGE"] = <<<EOM
-Hi.!
+Hi
 
-I'm Subtitle SearchEr Bot.
-I can provide movie / series subtitles.
+I am subtitle downloader bot. I can provide movie subtitles.
 
-Type the movie / series name,
-and let me try to do the megick..!
+==> Just send me Movie name. Use @imdb or @imdbot inline to get currect movie name.
 
-Subscribe ℹ️ @SpEcHlDe if you ❤️ using this bot!
+Subscribe ℹ️ @AI_bot_projects if you ❤️ using this bot!
 EOM;
 
 $GLOBALS["CHECKING_MESSAGE"] = "🤔";
@@ -165,7 +163,7 @@ function get_sub_i($sub_id, $user_id) {
     // apparently, the LEGAL disclaimer was too LOONG
     // hence, not displaying it
     // $tg_message_caption .= $sub_legal_disclaimer;
-    $tg_message_caption .= "\n\nSubtitle provided by @GetSubtitleBot from @SpEcHlDe.";
+    $tg_message_caption .= "\n\nSubscribe ℹ️ @AI_bot_projects if you ❤️ using this bot!";
     
     return array(
         "chat_id" => $user_id,
